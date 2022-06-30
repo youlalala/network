@@ -8,7 +8,7 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 object NetWorkService{
-    private const val BASE_URL ="https://api.icndb.com/"
+    private const val BASE_URL ="http://api.icndb.com/"
 
     //retrofit 객체 생성
     val retrofit = Retrofit.Builder()

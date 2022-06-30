@@ -1,5 +1,6 @@
 package org.techtown.network.network
 
+import android.util.Log
 import org.techtown.network.model.Model
 import org.techtown.network.model.ValueModel
 import retrofit2.Call
@@ -21,6 +22,7 @@ class ApiWrapper {
                     }
                 }
                 override fun onFailure(call: Call<Model>, t: Throwable) {
+                    Log.i("youla","failure : "+t.toString())
                     modelCall.cancel()
                 }
             })
